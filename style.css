@@ -1,0 +1,663 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+@media (min-width: 992px) {
+  body {
+    font-family: "text-regular";
+  }
+  .topnav {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    background: rgb(194, 129, 88);
+    color: white;
+  }
+  .topnavopen {
+    display: block;
+  }
+  .topnav ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+  .topnav li {
+    margin: 45px;
+    font-size: 30px;
+  }
+  .topnav a {
+    text-decoration: none;
+    color: white;
+  }
+  .ham {
+    height: 50px;
+    width: 50px;
+    background-color: rgb(194, 129, 88);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 11px;
+    z-index: 1;
+    margin: 5px 10px;
+  }
+  .ham span {
+    height: 3px;
+    width: 100%;
+    background-color: black;
+    display: block;
+    border-radius: 25%;
+  }
+  .header-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  img {
+    height: 180px;
+    width: 100%;
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+  em {
+    color: rgb(194, 129, 88);
+    font-style: normal;
+  }
+  em em:hover {
+    color: white;
+  }
+  .banner h1 {
+    font-size: 92px;
+    font-weight: bold;
+    color: rgb(23, 48, 62);
+  }
+  .banner h2 {
+    font-size: 52px;
+    color: rgb(23, 48, 62);
+    margin-bottom: 10px;
+  }
+  .banner h3 {
+    display: flex;
+    font-size: 20px;
+    color: rgb(23, 48, 62);
+  }
+  .banner hr {
+    background-color: rgb(238, 114, 30);
+    width: 100px;
+    height: 2px;
+    height: 3px;
+    border: none;
+    opacity: 1;
+    margin: 0px;
+    margin-right: 15px;
+    margin-top: 8px;
+  }
+  .banner em {
+    font-size: 38px;
+  }
+  .images {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 20px;
+  }
+  .images img {
+    width: 100%;
+    height: auto;
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+  .images .car {
+    margin-top: 24px;
+  }
+  .pic3 {
+    margin-top: auto;
+  }
+  .pic4 {
+    margin-top: auto;
+  }
+  .drive {
+    margin: 140px 70px;
+  }
+  .drive h2 {
+    font-size: 42px;
+    color: rgb(194, 129, 88);
+  }
+  .drive p {
+    font-size: 18px;
+    margin-top: 20px;
+  }
+  .drive .image {
+    position: relative;
+    bottom: 150px;
+    width: 50%;
+    height: 250px;
+  }
+  .drive img {
+    position: absolute;
+    width: 600px;
+    height: 550px;
+  }
+  .services {
+    height: 100%;
+    background-color: rgb(26, 56, 75);
+  }
+  .services .stages {
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .services .stage1 {
+    background-color: rgb(31, 61, 80);
+  }
+  .services .stage2 {
+    background-color: rgb(31, 61, 80);
+  }
+  .services .stage3 {
+    background-color: rgb(31, 61, 80);
+  }
+  .services h2 {
+    color: white;
+    font-size: 42px;
+    padding-top: 110px;
+    margin-bottom: 20px;
+    margin-left: 35px;
+  }
+  .services img {
+    width: 90%;
+    height: 180px;
+    -o-object-fit: contain;
+       object-fit: contain;
+    margin-left: 20px;
+  }
+  .services h3 {
+    color: rgb(194, 129, 88);
+    margin-left: 20px;
+    font-size: 30px;
+  }
+  .services hr {
+    background-color: rgb(238, 114, 30);
+    width: 300px;
+    height: 1px;
+    border: none;
+    opacity: 0.8;
+    margin: 0px;
+    margin-left: 23px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+  }
+  .services p {
+    color: white;
+    margin-left: 20px;
+  }
+  .services .first {
+    display: block;
+    height: 10px;
+    width: 5%;
+    background-color: rgb(194, 129, 88);
+    border-radius: 5px;
+  }
+  .services .second {
+    display: block;
+    height: 10px;
+    width: 0.8%;
+    background-color: white;
+    border-radius: 100%;
+    margin-left: 10px;
+  }
+  .services .third {
+    display: block;
+    height: 10px;
+    width: 0.8%;
+    background-color: white;
+    border-radius: 100%;
+    margin-left: 10px;
+  }
+  .services .spans {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    padding-bottom: 50px;
+  }
+  .creation h2 {
+    font-size: 42px;
+    color: rgb(194, 129, 88);
+    margin-top: 70px;
+  }
+  .creation button {
+    padding: 20px 80px;
+    border-style: none;
+    background-color: rgb(26, 56, 75);
+    color: white;
+    font-size: 24px;
+    margin-top: 20px;
+  }
+  .creation img {
+    width: 100%;
+    height: auto;
+    -o-object-fit: contain;
+       object-fit: contain;
+    margin-top: 90px;
+  }
+  .creation .mail {
+    margin-top: 190px;
+  }
+  .getintouch {
+    margin-top: 80px;
+    background-color: rgb(237, 238, 240);
+  }
+  .getintouch input[type=text],
+.getintouch select {
+    width: 100%;
+    padding: 16px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    font-size: 20px;
+    border: none;
+  }
+  .getintouch input[type=submit] {
+    width: 100%;
+    background-color: rgb(26, 56, 75);
+    color: white;
+    padding: 18px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    font-size: 24px;
+  }
+  .getintouch #message {
+    padding: 70px 20px;
+  }
+  .getintouch img {
+    width: 100%;
+    height: 750px;
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+  .getintouch h2 {
+    font-size: 42px;
+    color: rgb(194, 129, 88);
+    margin-top: 70px;
+  }
+  .getintouch .paragraph {
+    line-height: 1.2;
+    margin-left: 35px;
+    margin-bottom: 30px;
+  }
+  .contact {
+    background-image: url("./imgs/Rectangle 80.png");
+    background-color: white;
+    margin-top: 90px;
+    padding: 120px 30px;
+  }
+  .contact .details {
+    top: 130px;
+  }
+  .contact .details h2 {
+    color: white;
+    font-size: 42px;
+    margin-bottom: 20px;
+  }
+  .contact .address {
+    display: flex;
+    font-size: 24px;
+    color: white;
+  }
+  .contact .address .number {
+    margin-left: 80px;
+  }
+  .footer {
+    background-color: white;
+    height: auto;
+  }
+  .footer img {
+    height: 140px;
+    width: 100%;
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+}
+/*
+####################################################
+M E D I A  Q U E R I E S
+####################################################
+*/
+/*
+::::::::::::::::::::::::::::::::::::::::::::::::::::
+Bootstrap 4 breakpoints
+*/
+/* 
+Extra small devices (portrait phones, less than 576px) 
+No media query since this is the default in Bootstrap because it is "mobile first"
+*/
+/* Small devices (landscape phones, 576px and up) */
+@media (max-width: 568px) {
+  .header {
+    display: flex;
+    align-items: center;
+  }
+  .header .ham {
+    padding: 14px;
+  }
+  .header img {
+    width: 53%;
+  }
+  .banner {
+    overflow: hidden;
+  }
+  .banner h1 {
+    font-size: 32px;
+  }
+  .banner h2 {
+    font-size: 20px;
+  }
+  .banner .em {
+    font-size: 28px;
+  }
+  .banner h3 {
+    font-size: 14px;
+  }
+  .banner hr {
+    width: 50px;
+  }
+  .banner .images .car {
+    margin-top: 1px;
+  }
+  .drive {
+    margin: 70px 0;
+  }
+  .drive img {
+    width: 100%;
+    margin-left: 80px;
+    height: 600px;
+  }
+  .drive h2 {
+    font-size: 20px;
+  }
+  .drive p {
+    font-size: 14px;
+  }
+  .services h2 {
+    padding: 30px;
+    font-size: 20px;
+  }
+  .services h3 {
+    font-size: 23px;
+  }
+  .services p {
+    font-size: 14px;
+    text-align: justify;
+    margin: 5px 18px;
+  }
+  .services .first {
+    width: 9%;
+  }
+  .services .second {
+    width: 2.8%;
+  }
+  .services .third {
+    width: 2.7%;
+  }
+  .creation h2 {
+    font-size: 23px;
+    margin: 0;
+  }
+  .creation button {
+    font-size: 16px;
+  }
+  .getintouch h2 {
+    font-size: 34px;
+  }
+  .getintouch p {
+    font-size: 14px;
+  }
+  .getintouch input[type=text],
+.getintouch .getintouch select {
+    font-size: 16px;
+  }
+  .getintouch input[type=submit] {
+    font-size: 16px;
+  }
+  .contact {
+    background-position-x: right;
+  }
+  .contact img {
+    width: 100%;
+  }
+  .contact .details h2 {
+    font-size: 19px;
+  }
+  .contact .address p {
+    font-size: 12px;
+  }
+  .footer img {
+    height: 93px;
+  }
+}
+/* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
+@media (max-width: 768px) {
+  .header {
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .header img {
+    width: 90%;
+    height: auto;
+  }
+  .banner {
+    overflow: hidden;
+  }
+  .banner h1 {
+    font-size: 65px;
+  }
+  .banner h2 {
+    font-size: 39px;
+  }
+  .drive h2 {
+    font-size: 26px;
+  }
+  .drive img {
+    width: 100%;
+    margin-left: 30px;
+  }
+  .drive p {
+    font-size: 15px;
+  }
+  .drive .images.car {
+    margin-top: 13px;
+  }
+  .services h2 {
+    font-size: 26px;
+  }
+  .services h3 {
+    font-size: 21px;
+  }
+  .services hr {
+    width: 188px;
+  }
+  .services p {
+    font-size: 14px;
+  }
+  .services .second {
+    width: 1.5%;
+  }
+  .services .third {
+    width: 1.5%;
+  }
+  .creation h2 {
+    font-size: 24px;
+  }
+  .creation button {
+    font-size: 15px;
+  }
+  .getintouch h2 {
+    font-size: 34px;
+  }
+  .getintouch p {
+    font-size: 13px;
+  }
+  .getintouch input[type=text],
+.getintouch .getintouch select {
+    font-size: 16px;
+  }
+  .getintouch input[type=submit] {
+    font-size: 16px;
+  }
+  .contact {
+    background-position-x: right;
+  }
+  .contact .details h2 {
+    font-size: 23px;
+  }
+  .contact .address p {
+    font-size: 13px;
+  }
+  .footer img {
+    height: 127px;
+  }
+}
+/* Large devices (desktops, 992px and up) */
+/* Extra large devices (large desktops, 1200px and up) */
+/*
+::::::::::::::::::::::::::::::::::::::::::::::::::::
+Custom media queries
+*/
+/* Set width to make card deck cards 100% width *//*# sourceMappingURL=style.css.map */

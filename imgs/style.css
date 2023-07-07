@@ -1,0 +1,47 @@
+body {
+  font-family: "amy";
+}
+
+.header-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.topnav {
+  display: flex;
+  justify-content: end;
+}
+.topnav li {
+  display: inline;
+  list-style: none;
+}
+.topnav li:hover {
+  list-style-type: disc;
+  color: rgb(238, 114, 30);
+}
+.topnav li:hover a {
+  background-color: rgb(238, 114, 30);
+  color: black;
+}
+.topnav a {
+  display: inline-block;
+  color: black;
+  text-align: center;
+  padding: 30px 20px;
+  text-decoration: none;
+  font-weight: lighter;
+  font-size: 18px;
+}
+
+img {
+  height: 220px;
+  width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+em {
+  color: rgb(226, 131, 68);
+  font-style: normal;
+}/*# sourceMappingURL=style.css.map */
